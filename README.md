@@ -1,31 +1,89 @@
-# SociaBook - A Social Media Application
+## SociaBook - A Social Media Application
 
 A social media handle where users can post comments, send text & audio messages and maintain a follower list as well as who follows. The users can like, comment and share posts too. 
 
-# Design - Relational Schema
+## Features
 
-# Features - Functional Requirements
+### User Authentication
+<ul>
+  <li>The user can Sign In, Sign Up, Logout.</li>
+  <li>The user can recover password if forgot.</li>
+</ul>
 
-## User Authentication
-• The user shall be able to Sign In, Sign Up, Logout.
-• The user shall be able to recover password.
+### Feed
+<ul>
+  <li>The user can view the post.</li>
+  <li>The user can like, comment and share the post.</li>
+</ul>
 
-## Feed
-o The user shall be able to view the post.
-o The user shall be able to like, comment and share the post.
+### Social
+<ul>
+  <li>The user can post pictures.</li>
+  <li>The user can search, follow and unfollow other users.</li>
+  <li>The user can see the followers and following list of other users.</li>
+</ul>
 
-## Social
-o The user shall be able to post pictures.
-o The user shall be able to search, follow and unfollow other users.
-o The user shall be able to see the followers and following list of other users.
+### Profile
+<ul>
+  <li>The user can change their profile details.</li>
+  <li>The user can change their password.</li>
+  <li>The user can edit and delete their post.</li>
+</ul>
 
-## Profile
-o The user shall be able change his profile details.
-o The user shall be able to change his password.
-o The user shall be able to edit and delete his post.
+### Messaging
+<ul>
+  <li>The user can see whether his friend is online or offline.</li>
+  <li>The user can see the last seen of the friend.</li>
+  <li>The user can send & receive text and multimedia messages.</li>
+  <li>The user can see the time and date of the messages.</li>
+</ul>
 
-## Messaging
-o The user shall be able to see whether his friend is online or offline.
-o The user shall be able to see the last seen of the friend.
-o The user shall be able to send & receive text and multimedia messages.
-o The user shall be able to see the time and date of the messages.
+
+## Setup
+
+Cloning the Repository
+```
+$ git clone https://github.com/Rishabh7896/SociaBook
+$ cd SociaBook
+```
+
+Creating Virtual Environment
+```
+$ python -m venv myenv
+```
+
+Activating the Environment
+```
+$ myenv\Scripts\activate
+```
+
+Installing Dependencies
+```
+$ pip install -r requirements.txt
+```
+
+Migrating the project
+```
+$ python manage.py makemigration
+$ python manage.py migrate
+```
+
+Runing the project on your local machine
+```
+$ python manage.py runserver
+```
+
+## User Login
+Open <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> on your browser.
+```
+username: abhi
+password: abhi
+```
+
+## Admin Login
+
+Open <a href="http://127.0.0.1:8000/admin">http://127.0.0.1:8000/admin</a> on your browser.
+```
+username: admin
+password: admin
+```
